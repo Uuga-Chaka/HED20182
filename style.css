@@ -361,4 +361,22 @@
 #container #patro h1 {
   font-size: 40px;
 }
+
+#container #patro .items {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #patro .items img {
+  margin: 10px;
+  width: 100px;
+}
 /*# sourceMappingURL=style.css.map */
