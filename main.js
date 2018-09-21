@@ -39,8 +39,6 @@ Vue.component('Images', {
     </div>`
 });
 
-console.log(patrocinadores);
-
 var patro = new Vue({
     el: '#patro',
     data: {
@@ -53,3 +51,25 @@ var patro = new Vue({
         <Images v-bind:patrocinadores="patrocinio"></Images>
     </div>`
 });
+
+Vue.component('Ponentes',{
+    props:['ponentes'],
+    template:`
+    <div class="ponente">
+        <img v-for="ponente in ponentes" :src="ponente.img"/>
+    </div>
+    `
+});
+
+var ponentes = new Vue({
+    el:'#ponentes',
+    data:{
+        ponente: ponentes
+    },
+    template:`
+        <div id="ponentes">
+            <h1>ponentes</h1>
+            <Ponentes v-bind:ponentes="ponente"></Ponentes>
+        </div>
+    `
+})
