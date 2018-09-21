@@ -287,4 +287,78 @@
 #container #suscribe #form-content form #validate p a:hover {
   color: #f0f0f0;
 }
+
+#container footer {
+  background-color: #26214D;
+}
+
+#container footer .content {
+  padding: 40px;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#container footer .content .hed img {
+  width: 100px;
+}
+
+#container footer .content .hed p {
+  font-size: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+#container footer .content ul {
+  display: inline-block;
+  margin-left: 40px;
+  padding-left: 40px;
+  border-left: 1px solid white;
+}
+
+#container footer .content ul li {
+  list-style-type: none;
+  font-weight: 900;
+  color: white;
+  font-size: 12px;
+  margin: 10px 0 10px 0;
+}
+
+#container footer .content ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#container footer .content .redes {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+#container footer .content .redes img {
+  width: 25px;
+  margin: 10px;
+}
+
+#container #patro h2, #container #patro h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  color: #F48576;
+}
+
+#container #patro h1 {
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */

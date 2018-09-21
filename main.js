@@ -29,4 +29,27 @@ var app = new Vue({
         <Partner v-bind:elementos="partners"></Partner>
     </div>
     `
-})
+});
+
+Vue.component('Images', {
+    props: ['patrocinadores'],
+    template: `
+    <div class="items" >
+        <a v-for="patroci in patrocinadores" v-bind:href="patroci.web"><img :src="patroci.img"/></a>
+    </div>`
+});
+
+console.log(patrocinadores);
+
+var patro = new Vue({
+    el: '#patro',
+    data: {
+        patrocinio: patrocinadores
+    },
+    template: `
+    <div id="patro">
+        <h2>gracias a nuestros</h2>
+        <h1>patrocinadores</h1>
+        <Images v-bind:patrocinadores="patrocinio"></Images>
+    </div>`
+});

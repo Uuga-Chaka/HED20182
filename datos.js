@@ -43,6 +43,35 @@ var talleres = [{
     link: 'https://registrokawai.com'
 }];
 
+var patrocinadores =[{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+},{
+    img:'/assets/img/hed02.jpg',
+    web:''
+}]
+
 var medias = [{
     img: '/assets/img/hed01.jpg',
     name: 'Santiago Morales',
