@@ -46,12 +46,41 @@
           transform: scale(1.1);
 }
 
-#app #model .container .content {
+#app #model .container .borde {
+  padding: 5px;
+  margin: auto;
   background-color: #26214D;
-  padding: 20px;
 }
 
-#app #model .container .content h1 {
+#app #model .container .borde .content {
+  background-color: #26214D;
+  padding: 20px;
+  overflow: auto;
+  height: 340px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+#app #model .container .borde .content::-webkit-scrollbar {
+  width: 5px;
+}
+
+#app #model .container .borde .content::-webkit-scrollbar-track {
+  background: none;
+}
+
+#app #model .container .borde .content::-webkit-scrollbar-thumb {
+  background: #F48576;
+  border-radius: 36px;
+}
+
+#app #model .container .borde .content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#app #model .container .borde .content h1 {
   color: #F48576;
   font-size: 40px;
   text-transform: uppercase;
@@ -60,14 +89,13 @@
   text-align: center;
 }
 
-#app #model .container .content p {
+#app #model .container .borde .content p {
   font-weight: 400;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 20px;
   color: white;
   width: 600px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 30px;
   margin: auto;
 }
 

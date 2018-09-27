@@ -16,9 +16,11 @@ Vue.component('Modal', {
                 <div id="cruz" v-on:click="ponenteDesseleccionado">
                     <img src="/assets/img/cruz.svg" alt="">
                 </div>
-            <div class="content">
-                <h1>{{datos.name}}</h1>
-                <p>{{datos.info}}</p>
+            <div class="borde">
+                <div class="content">
+                    <h1>{{datos.name}}</h1>
+                    <p v-for="info in datos.info">{{info}}</p>
+                 </div>
             </div>
         </div>
     </div>
