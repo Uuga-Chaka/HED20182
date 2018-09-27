@@ -5,98 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hoy es diseño 2018-2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="redes"></div>
 
 <body>
-    <div id="container">
-        <div id="nav">
-            <div class="size">
-                <img src="/assets/img/logo-hedp-black.svg" alt="">
-                <ul>
-                    <li><a href="#">media partners</a></li>
-                    <li><a href="#">ponentes</a></li>
-                    <li><a href="#">prensa</a></li>
-                    <li><a href="#">lugar</a></li>
-                    <li><a href="#">contacto</a></li>
-                    <li><a href="#">agenda</a></li>
-                </ul>
-            </div>
-        </div>
-        <header>
-            <img src="/assets/img/Creacion.png" alt="">
-        </header>
-        <div id="patro"></div>
-        <div id="ponentes"></div>
-        <div id="partner">
-            <div class="info">
-                <h1>media partners</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut risus ac nunc commodo finibus nec vel
-                    felis. Praesent est nisl, aliquam pretium tristique tincidunt, feugiat et justo. Nam hendrerit in
-                    arcu ac maximus. Nullam eleifend tincidunt quam, vitae semper felis rutrum hendrerit. Nulla
-                    facilisi. Nunc bibendum sodales sapien eleifend scelerisque. Donec venenatis vulputate ex, vel
-                    interdum ex. Sed sed tempus purus. Nunc gravida lorem sed turpis facilisis tincidunt.</p>
-            </div>
-            <div id="media-partners">
-            </div>
-        </div>
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.033887981898!2d-76.53282148524222!3d3.3417917975673026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1eb8d09a3c1%3A0x766b9b441dfa8bbe!2sUniversidad+Icesi!5e0!3m2!1ses!2sco!4v1537401147788"
-                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div id="suscribe">
-            <div id="form-content">
-
-                <h1>suscribirme</h1>
-                <form action="">
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email" placeholder="info@hoyesdiseno.com">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Pepito">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Perez">
-                    <div id="validate">
-                        <input type="radio" name="validar" id="">
-                        <p>Acepto y he leído la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
-                                datos personales</a> de la Universidad Icesi.</p>
-                    </div>
-                    <div class="btn">
-                        <input type="submit" value=" Suscribirme">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <footer>
-            <div class="content">
-
-                <div class="hed">
+    <div id="app">
+        <div id="container">
+            <div id="nav">
+                <div class="size">
                     <img src="/assets/img/logo-hedp-black.svg" alt="">
-                    <p>2018 © Hoy Es Diseño</p>
-                </div>
-                <div class="links">
                     <ul>
-                        <li><a href="#">MEDIA PARTNERS</a></li>
-                        <li><a href="#">PONENTES</a></li>
-                        <li><a href="#">PRENSA</a></li>
-                        <li><a href="#">LUGAR</a></li>
-                        <li><a href="#">CONTACTO</a></li>
-                        <li><a href="#">AGENDA</a></li>
+                        <li><a href="#">media partners</a></li>
+                        <li><a href="#">ponentes</a></li>
+                        <li><a href="#">prensa</a></li>
+                        <li><a href="#">lugar</a></li>
+                        <li><a href="#">contacto</a></li>
+                        <li><a href="#">agenda</a></li>
                     </ul>
                 </div>
-                <div class="redes">
-                    <a href="https://www.facebook.com/hoyesdiseno/"><img src="assets/img/logo-facebook.svg" alt=""></a>
-                    <a href="https://www.instagram.com/_hoyesdiseno/"><img src="assets/img/logo-instagram.svg" alt=""></a>
-                    <a href="https://twitter.com/hoyesdiseno"><img src="assets/img/logo-twitter.svg" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCd6a78lCXv3gdgnJXsARR8g"><img src="assets/img/logo-youtube.svg"
-                            alt=""></a>
+            </div>
+            <header>
+                <img src="/assets/img/Creacion.png" alt="">
+                <div class="words">
+                    <h1 class="animate">sabrosura</h1>
+                    <h1 class="animate">creación</h1>
+                    <h1 class="animate">cambio</h1>
+                    <h1 class="animate">diversidad</h1>
+                </div>
+            </header>
+            <div id="patro">
+                <h2>gracias a nuestros</h2>
+                <h1>patrocinadores</h1>
+                <Images v-bind:patrocinadores="patrocinio"></Images>
+            </div>
+            <div id="ponentes">
+                <h1>ponentes</h1>
+                <Ponentes v-bind:ponentes="ponente" v-bind:selected="seleccionado"></Ponentes>
+                <button>conocer más</button>
+            </div>
+            <div id="partner">
+                <div class="info">
+                    <h1>media partners</h1>
+                </div>
+                <div id="media-partners">
+                    <Partner v-bind:elementos="partners"></Partner>
                 </div>
             </div>
-        </footer>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.033887981898!2d-76.53282148524222!3d3.3417917975673026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1eb8d09a3c1%3A0x766b9b441dfa8bbe!2sUniversidad+Icesi!5e0!3m2!1ses!2sco!4v1537401147788"
+                    width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="suscribe">
+                <div id="form-content">
+
+                    <h1>suscribirme</h1>
+                    <form action="">
+                        <label for="email">Email</label>
+                        <input type="email" name="" id="email" placeholder="info@hoyesdiseno.com">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Pepito">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Perez">
+                        <div id="validate">
+                            <input type="radio" name="validar" id="">
+                            <p>Acepto y he leído la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
+                                    datos personales</a> de la Universidad Icesi.</p>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value=" Suscribirme">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="content">
+
+                    <div class="hed">
+                        <img src="/assets/img/logo-hedp-black.svg" alt="">
+                        <p>2018 © Hoy Es Diseño</p>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">MEDIA PARTNERS</a></li>
+                            <li><a href="#">PONENTES</a></li>
+                            <li><a href="#">PRENSA</a></li>
+                            <li><a href="#">LUGAR</a></li>
+                            <li><a href="#">CONTACTO</a></li>
+                            <li><a href="#">AGENDA</a></li>
+                        </ul>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/hoyesdiseno/"><img src="assets/img/logo-facebook.svg" alt=""></a>
+                        <a href="https://www.instagram.com/_hoyesdiseno/"><img src="assets/img/logo-instagram.svg" alt=""></a>
+                        <a href="https://twitter.com/hoyesdiseno"><img src="assets/img/logo-twitter.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCd6a78lCXv3gdgnJXsARR8g"><img src="assets/img/logo-youtube.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="infosita">
+            
+                <Modal v-if="seleccionado"  v-bind:datos="seleccionado"></Modal>
+            
+        </div>
+
+        <!-- <div id="model" class="open">
+            <div class="container">
+                <div id="cruz">
+                    <img src="/assets/img/cruz.svg" alt="">
+                </div>
+                <div class="content">
+                    <h1>¿Qué es el kit de prensa?</h1>
+                    <p></p>
+                </div>
+                <div class="descarga">
+                    <h1></h1>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="datos.js"></script>
+    <script src="accions.js"></script>
     <script src="main.js"></script>
 </body>
 
