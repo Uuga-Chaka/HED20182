@@ -11,32 +11,44 @@ var ponentes = [{
         `En ocasiones, nos contactan clientes que ya saben lo que quieren hacer y tienen un boceto definitivo. En estos casos, nos gusta ser muy respetuosos con la intención del cliente. El desafío es tratar de captar lo que el cliente quiere decir y entregarlo de la manera más leal y profesional posible.`,
         `En otras ocasiones, el cliente nos pide que desarrollemos todo desde cero: concepto, idea, dirección de arte, etc. Nos encanta cuidar un producto completo y producir algo con un mensaje potente y coherente. Nos apasionan la sinergia y la Dirección de Arte. Esto nos da la posibilidad de usar colores, formas, tipos y texturas para darle a cada producto un aspecto y sensación únicos. Para nosotros, simplemente no hay mayor alegría que esto.`
     ],
-    insta: 'https://instagram.com/uuga',
-    face: 'https://www.facebook.com/jpgallego9'
+    redes: {
+        insta: 'https://instagram.com/uuga',
+        face: 'https://www.facebook.com/jpgallego9',
+        web: 'http://www.morphine.com.uy/',
+        be: 'https://www.behance.net/Morphine-MG',
+    }
 }, {
-    img: '/assets/img/ponentes/ricardo_mendieta.jpg',
+    img: '/assets/img/ponentes/irene_anton.jpg',
     name: 'Irene & Anton',
     info: 'Lorem ipsum dolor sit amen',
-    insta: 'https://instagram.com/uuga',
-    face: 'https://www.facebook.com/jpgallego9'
+    redes: {
+        insta: 'https://instagram.com/uuga',
+        face: 'https://www.facebook.com/jpgallego9'
+    }
 }, {
     img: '/assets/img/ponentes/ricardo_mendieta.jpg',
     name: 'Foo Studio - Ricardo Mendieta',
     info: 'Lorem ipsum dolor sit amen',
-    insta: 'https://instagram.com/uuga',
-    face: 'https://www.facebook.com/jpgallego9'
+    redes: {
+        insta: 'https://instagram.com/uuga',
+        face: 'https://www.facebook.com/jpgallego9'
+    }
 }, {
     img: '/assets/img/ponentes/ricardo_mendieta.jpg',
     name: 'PonenciaUno',
     info: 'Lorem ipsum dolor sit amen',
-    insta: 'https://instagram.com/uuga',
-    face: 'https://www.facebook.com/jpgallego9'
+    redes: {
+        insta: 'https://instagram.com/uuga',
+        face: 'https://www.facebook.com/jpgallego9'
+    }
 }, {
     img: '/assets/img/ponentes/ricardo_mendieta.jpg',
     name: 'PonenciaUno',
     info: 'Lorem ipsum dolor sit amen',
-    insta: 'https://instagram.com/uuga',
-    face: 'https://www.facebook.com/jpgallego9'
+    redes: {
+        insta: 'https://instagram.com/uuga',
+        face: 'https://www.facebook.com/jpgallego9'
+    }
 }];
 
 var talleres = [{
@@ -58,32 +70,20 @@ var talleres = [{
 }];
 
 var patrocinadores = [{
-    img: '/assets/img/hed02.jpg',
-    web: ''
+    img: '/assets/img/logos/aqcua.png',
+    web: 'http://www.acquasantahotel.com/inicio/'
 }, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
+    img: '/assets/img/logos/caracoletas.png',
+    web: 'http://www.caracoletas.com/'
 }, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
+    img: '/assets/img/logos/ingeartek.png',
+    web: 'https://www.linkedin.com/company/ingeartek/'
 }, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
+    img: '/assets/img/logos/la-linterna.png',
+    web: 'https://www.instagram.com/lalinternacali/'
 }, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
-}, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
-}, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
-}, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
-}, {
-    img: '/assets/img/hed02.jpg',
-    web: ''
+    img: '/assets/img/logos/popkanas.png',
+    web: 'https://www.facebook.com/Popkanas-881719768666351/'
 }]
 
 var medias = [{

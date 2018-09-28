@@ -56,7 +56,7 @@
   background-color: #26214D;
   padding: 20px;
   overflow: auto;
-  height: 340px;
+  height: 400px;
   /* width */
   /* Track */
   /* Handle */
@@ -68,12 +68,17 @@
 }
 
 #app #model .container .borde .content::-webkit-scrollbar-track {
-  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #app #model .container .borde .content::-webkit-scrollbar-thumb {
   background: #F48576;
   border-radius: 36px;
+}
+
+#app #model .container .borde .content img {
+  display: block;
+  margin: auto;
 }
 
 #app #model .container .borde .content::-webkit-scrollbar-thumb:hover {
@@ -95,8 +100,30 @@
   color: white;
   width: 600px;
   font-size: 14px;
+  letter-spacing: .5px;
   line-height: 30px;
   margin: auto;
+}
+
+#app #model .container .borde .content .redes {
+  float: right;
+  margin-top: 50px;
+  margin-right: 120px;
+}
+
+#app #model .container .borde .content .redes img {
+  width: 25px;
+  padding: 3px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#app #model .container .borde .content .redes img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #app #container {
@@ -495,7 +522,7 @@
 }
 
 #app #container #patro .items {
-  width: 70%;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,78 +535,136 @@
   margin-bottom: 50px;
 }
 
-#app #container #patro .items img {
+#app #container #patro .items a {
+  padding: 20px;
+}
+
+#app #container #patro .items a > img {
   margin: 5px;
   width: 100px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
   -webkit-transition: -webkit-transform .3s, -webkit-filter .3s;
   transition: -webkit-transform .3s, -webkit-filter .3s;
   transition: transform .3s, filter .3s;
   transition: transform .3s, filter .3s, -webkit-transform .3s, -webkit-filter .3s;
 }
 
-#app #container #patro .items img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+#app #container #patro .items a > img:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
   z-index: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 #app #container #ponentes {
-  background-color: #F48576;
+  background-color: #26214D;
   padding: 20px;
   text-align: center;
 }
 
 #app #container #ponentes h1 {
-  text-align: center;
   text-transform: uppercase;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 10px;
-  color: white;
-  font-size: 70px;
-  margin-bottom: 20px;
-}
-
-#app #container #ponentes button {
-  text-transform: uppercase;
   color: #F48576;
-  background-color: white;
-  padding: 10px;
-  letter-spacing: 5px;
-  border-radius: 36px;
-  border: none;
-  font-size: 12px;
-  margin: 30px;
+  letter-spacing: 25px;
+  font-size: 90px;
 }
 
-#app #container #ponentes .ponente {
-  width: 80%;
+#app #container #ponentes .ponentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  padding-top: 100px;
+  padding-bottom: 160px;
   margin: auto;
+}
+
+#app #container #ponentes .ponentes .item {
+  border: 1px solid #F48576;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 150px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#app #container #ponentes .ponentes .item .photo {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 150px;
 }
 
-#app #container #ponentes .ponente img {
-  width: 200px;
-  margin: 2px;
+#app #container #ponentes .ponentes .item .photo > img {
+  -webkit-filter: blur(0) brightness(1);
+          filter: blur(0) brightness(1);
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  z-index: 0;
+  -webkit-transition: -webkit-filter .3s;
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s;
+}
+
+#app #container #ponentes .ponentes .item .photo:hover > img {
+  -webkit-filter: blur(10px) brightness(1.5);
+          filter: blur(10px) brightness(1.5);
+}
+
+#app #container #ponentes .ponentes .item .photo:hover > .mas {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+#app #container #ponentes .ponentes .item .photo .mas {
+  z-index: 2;
+  padding-top: 150px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 
-#app #container #ponentes .ponente img:hover {
-  z-index: 1;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+#app #container #ponentes .ponentes .item .photo .mas p {
+  z-index: 2;
+  text-transform: uppercase;
+  color: #F48576;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+#app #container #ponentes .ponentes .item .name {
+  font-family: "Montserrat", sans-serif;
+  color: #F48576;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+#app #container #ponentes .ponentes .item .name h1 {
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */

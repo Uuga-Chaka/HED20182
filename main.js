@@ -7,7 +7,6 @@ Vue.component('Modal', {
     methods: {
         ponenteDesseleccionado: function (event) {
             apps.seleccionado = null;
-            console.log(this.datos.name);
         },
     },
     template: `
@@ -19,7 +18,9 @@ Vue.component('Modal', {
             <div class="borde">
                 <div class="content">
                     <h1>{{datos.name}}</h1>
+                    <img :src="datos.img"/>
                     <p v-for="info in datos.info">{{info}}</p>
+                    <Redes :link="datos.redes"></Redes>
                  </div>
             </div>
         </div>
@@ -64,7 +65,7 @@ Vue.component('Images', {
 Vue.component('Ponentes', {
     props: ['ponentes', 'selected'],
     computed: {
-    
+
     },
     methods: {
         ponenteSeleccionado: function (ponente) {
@@ -73,12 +74,26 @@ Vue.component('Ponentes', {
         },
     },
     template: `
-    <div class="ponente">
-        <a v-for="ponente in ponentes" v-on:click="ponenteSeleccionado(ponente)"><img :src="ponente.img"/></a>
+    <div class="ponentes">
+        <div class="item" v-for="ponente in ponentes" v-on:click="ponenteSeleccionado(ponente)">
+            <div class="photo">
+                <img :src="ponente.img"/>
+                <div class="mas">
+                    <img src="/assets/img/mas.png" alt="">
+                    <p>ver más</p>
+                </div>
+            </div>
+            <div class="name">
+                <h1>{{ponente.name}}</h1>
+            </div>
+        </div>
     </div>
     `
-});
-
+}); {
+    /* <div class="ponente" v-for="ponente in ponentes">
+                <a  v-on:click="ponenteSeleccionado(ponente)"><img :src="ponente.img"/></a>
+            </div> */
+}
 
 
 var apps = new Vue({
