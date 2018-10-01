@@ -7,13 +7,14 @@ Vue.component('Modal', {
     methods: {
         ponenteDesseleccionado: function (event) {
             apps.seleccionado = null;
+            console.log("working");
         },
     },
     template: `
-    <div id="model"> 
+    <div id="model" @keyup.enter="ponenteDesseleccionado"> 
         <div class="container">
                 <div id="cruz" v-on:click="ponenteDesseleccionado">
-                    <img src="/assets/img/cruz.svg" alt="">
+                    <img src="assets/img/cruz.svg" alt="">
                 </div>
             <div class="borde">
                 <div class="content">
@@ -45,9 +46,10 @@ Vue.component('Redes', {
     props: ['link'],
     template: `
     <div class="redes">
-        <a :href="link.be" target="_blank" v-if="link.be"><img src="/assets/img/behance-logo.svg" alt=""></a>
-        <a :href="link.face" target="_blank" v-if="link.face"><img src="/assets/img/logo-facebook.svg" alt=""></a>
-        <a :href="link.insta" target="_blank" v-if="link.insta"><img src="/assets/img/logo-instagram.svg" alt=""></a>
+        <a :href="link.web" target="_blank" v-if="link.web"><img src="assets/img/link-logo.svg" alt=""></a>
+        <a :href="link.be" target="_blank" v-if="link.be"><img src="assets/img/behance-logo.svg" alt=""></a>
+        <a :href="link.face" target="_blank" v-if="link.face"><img src="assets/img/logo-facebook.svg" alt=""></a>
+        <a :href="link.insta" target="_blank" v-if="link.insta"><img src="assets/img/logo-instagram.svg" alt=""></a>
     </div>`
 });
 
@@ -62,38 +64,64 @@ Vue.component('Images', {
 });
 
 
+// Vue.component('Ponentes', {
+//     props: ['ponentes', 'selected'],
+//     computed: {
+
+//     },
+//     methods: {
+//         ponenteSeleccionado: function (ponente) {
+//             apps.seleccionado = ponente;
+//             console.log(ponente.name);
+//         },
+//     },
+//     template: `
+//     <div class="ponentes">
+//         <div class="item" v-for="ponente in ponentes" v-on:click="ponenteSeleccionado(ponente)">
+//             <div class="photo">
+//                 <img :src="ponente.img"/>
+//                 <div class="mas">
+//                     <img src="assets/img/mas.png" alt="">
+//                     <p>ver más</p>
+//                 </div>
+//             </div>
+//             <div class="name">
+//                 <h1>{{ponente.name}}</h1>
+//             </div>
+//         </div>
+//     </div>
+//     `
+// });
+
 Vue.component('Ponentes', {
     props: ['ponentes', 'selected'],
-    computed: {
-
-    },
     methods: {
-        ponenteSeleccionado: function (ponente) {
-            apps.seleccionado = ponente;
-            console.log(ponente.name);
-        },
+        ponenteSeleccionado: function () {
+            apps.currentPonente += 1;
+            console.log(this.selected);
+            if (apps.currentPonente == ponentes.length)
+                apps.currentPonente = 0;
+
+        }
     },
     template: `
     <div class="ponentes">
-        <div class="item" v-for="ponente in ponentes" v-on:click="ponenteSeleccionado(ponente)">
-            <div class="photo">
-                <img :src="ponente.img"/>
-                <div class="mas">
-                    <img src="/assets/img/mas.png" alt="">
-                    <p>ver más</p>
+        <div class="container">
+            <div class="content">
+                <div class="distance">
+                    <div class="info">
+                        <h2>{{ponentes[selected].name}}</h2>
+                        <p v-for="info in ponentes[selected].info">{{info}}</p>
+                        <Redes :link="ponentes[selected].redes"></Redes>
+                    </div>
                 </div>
-            </div>
-            <div class="name">
-                <h1>{{ponente.name}}</h1>
+                <p v-on:click="ponenteSeleccionado">siguiente ></p>
+            </div><div class="photo">
+                <img :src="ponentes[selected].img"/>
             </div>
         </div>
-    </div>
-    `
-}); {
-    /* <div class="ponente" v-for="ponente in ponentes">
-                <a  v-on:click="ponenteSeleccionado(ponente)"><img :src="ponente.img"/></a>
-            </div> */
-}
+    </div>`
+});
 
 
 var apps = new Vue({
@@ -103,7 +131,8 @@ var apps = new Vue({
         taller: talleres,
         ponente: ponentes,
         patrocinio: patrocinadores,
-        partners: medias
+        partners: medias,
+        currentPonente: 0,
     },
     methods: {
         ponenteDesseleccionado: function () {

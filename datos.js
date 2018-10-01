@@ -1,5 +1,5 @@
 var ponentes = [{
-    img: '/assets/img/ponentes/ricardo_mendieta.jpg',
+    img: 'assets/img/ponentes/morphine.jpg',
     name: 'Morphine',
     info: [
         `Trabajamos creando gráficos fijos y en movimiento para publicidad, editorial,
@@ -18,36 +18,32 @@ var ponentes = [{
         be: 'https://www.behance.net/Morphine-MG',
     }
 }, {
-    img: '/assets/img/ponentes/irene_anton.jpg',
-    name: 'Irene & Anton',
-    info: 'Lorem ipsum dolor sit amen',
+    img: 'assets/img/ponentes/irene_anton2.jpg',
+    name: 'Anton & Irene',
+    info: [
+        'Irene:',
+        `Irene is the co-founder of the Brooklyn based design studio “Anton & Irene”. She has led the strategy and UX initiatives for clients including The Met, Kickstarter, Balenciaga, Wacom, Zumtobel, USA Today, EA, Spotify, Google, Nickelodeon, Karim Rashid, Shantell Martin, BBC and Red Bull for both the web and cross-platform applications. Her work has been recognized by Cannes, The Webbys, The Emmys, The FWA, Awwwards, Interaction Design Association and The European Design Awards.`,
+        `Irene has been a guest speaker at numerous conferences such as OFFF and FITC, and has lectured at SVA in New York, Hyper Island in Stockholm, Elisava in Barcelona, and the Design Academy in Eindhoven. Her personal projects have been displayed in Amsterdam, Antwerp, Paris, New York, Cincinnati, Singapore and Tegucigualpa.`, 'Aton:',
+        `I'm a New York based interactive designer with architecture background. 
+        Solving problems and creating new visual languages is my favorite part of the job. My main focus is designing large scale web projects, design languages and tools that lots of people will use for a very long time. I am an advocate for a proper user experience, structured design and extremely detailed execution. When designing experiences, I imagine a physical building where everything makes perfect sense and where some people will spend their lives
+        `,
+        `Clients:`,
+        `We’ve worked with some pretty great people at some pretty awesome companies. We also spend about 3 months a year working on self-initiated projects.`
+    ],
     redes: {
         insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9'
+        face: 'https://www.facebook.com/jpgallego9',
+        web: 'http://antonandirene.com/',
+        be: 'https://www.behance.net/antonandirene'
     }
 }, {
-    img: '/assets/img/ponentes/ricardo_mendieta.jpg',
+    img: 'assets/img/ponentes/ricardo_mendieta.jpg',
     name: 'Foo Studio - Ricardo Mendieta',
-    info: 'Lorem ipsum dolor sit amen',
+    info: ['Foo es una agencia digital creativa enfocada en la innovación tecnológica y comunicación, nos encontramos en la Ciudad de México, actualmente estamos trabajando en campañas increíbles para clientes como Indio, Bticino, Chevrolet y muchas más.'],
     redes: {
         insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9'
-    }
-}, {
-    img: '/assets/img/ponentes/ricardo_mendieta.jpg',
-    name: 'PonenciaUno',
-    info: 'Lorem ipsum dolor sit amen',
-    redes: {
-        insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9'
-    }
-}, {
-    img: '/assets/img/ponentes/ricardo_mendieta.jpg',
-    name: 'PonenciaUno',
-    info: 'Lorem ipsum dolor sit amen',
-    redes: {
-        insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9'
+        face: 'https://www.facebook.com/fooStudioMx/',
+        web: 'https://foostudio.mx/',
     }
 }];
 
@@ -70,24 +66,24 @@ var talleres = [{
 }];
 
 var patrocinadores = [{
-    img: '/assets/img/logos/aqcua.png',
+    img: 'assets/img/logos/aqcua.png',
     web: 'http://www.acquasantahotel.com/inicio/'
 }, {
-    img: '/assets/img/logos/caracoletas.png',
+    img: 'assets/img/logos/caracoletas.png',
     web: 'http://www.caracoletas.com/'
 }, {
-    img: '/assets/img/logos/ingeartek.png',
+    img: 'assets/img/logos/ingeartek.png',
     web: 'https://www.linkedin.com/company/ingeartek/'
 }, {
-    img: '/assets/img/logos/la-linterna.png',
+    img: 'assets/img/logos/la-linterna.png',
     web: 'https://www.instagram.com/lalinternacali/'
 }, {
-    img: '/assets/img/logos/popkanas.png',
+    img: 'assets/img/logos/popkanas.png',
     web: 'https://www.facebook.com/Popkanas-881719768666351/'
 }]
 
 var medias = [{
-    img: '/assets/img/hed01.jpg',
+    img: 'assets/img/hed01.jpg',
     name: 'Santiago Morales',
     redes: {
         insta: 'https://www.instagram.com/santiagomoriv/',
@@ -95,7 +91,7 @@ var medias = [{
         be: 'https://www.behance.net/santiagomoriv'
     }
 }, {
-    img: '/assets/img/hed02.jpg',
+    img: 'assets/img/hed02.jpg',
     name: 'Vane Kone',
     redes: {
         insta: 'https://www.instagram.com/vane.kone/',
@@ -103,7 +99,7 @@ var medias = [{
         be: 'https://www.behance.net/vanekone'
     }
 }, {
-    img: '/assets/img/hed03.jpg',
+    img: 'assets/img/hed03.jpg',
     name: 'Ana Moreno',
     redes: {
         insta: 'https://www.instagram.com/lettering.iam/',
@@ -111,7 +107,7 @@ var medias = [{
         be: 'https://www.behance.net/AnaMoreno1'
     }
 }, {
-    img: '/assets/img/hed04.jpeg',
+    img: 'assets/img/hed04.jpeg',
     name: 'Natalia Jiménez',
     redes: {
         insta: 'https://www.instagram.com/little.naths/',
@@ -119,7 +115,7 @@ var medias = [{
         be: null
     }
 }, {
-    img: '/assets/img/hed05.jpg',
+    img: 'assets/img/hed05.jpg',
     name: 'Sebastian pérez',
     redes: {
         insta: 'https://www.instagram.com/sebastian96_graphc/ ',

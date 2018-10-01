@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,31 +8,42 @@
     <title>Hoy es diseño 2018-2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="redes"></div>
 
 <body>
     <div id="app">
         <div id="container">
             <div id="nav">
                 <div class="size">
-                    <img src="/assets/img/logo-hedp-black.svg" alt="">
-                    <ul>
-                        <li><a href="#">media partners</a></li>
-                        <li><a href="#">ponentes</a></li>
-                        <li><a href="#">prensa</a></li>
-                        <li><a href="#">lugar</a></li>
-                        <li><a href="#">contacto</a></li>
-                        <li><a href="#">agenda</a></li>
-                    </ul>
+                    <img src="assets/img/logo-hedp-black.svg" alt="">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#partner">media partners</a></li>
+                            <li><a href="#ponentes">ponentes</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/1TfgXlM51PFKlINBt7otg3qkNhG_60o6v?usp=sharing">prensa</a></li>
+                            <li><a href="#map">lugar</a></li>
+                            <li><a href="#">contacto</a></li>
+                            <li><a href="#">agenda</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <header>
-                <img src="/assets/img/Creacion.png" alt="">
-                <div class="words">
-                    <h1 class="animate">sabrosura</h1>
-                    <h1 class="animate">creación</h1>
-                    <h1 class="animate">cambio</h1>
-                    <h1 class="animate">diversidad</h1>
+                <img src="assets/img/creacion_banner.png" alt="">
+                <div class="content">
+                    <div class="words">
+                        <h1 class="animation current">creación</h1>
+                        <h1 class="animation">cambio</h1>
+                        <h1 class="animation">diversidad</h1>
+                    </div>
+                    <div id="fecha">
+                        <div class="up">
+                            <p>Universidad Icesi</p>
+                            <span>Jueves 8 // Viernes 9</span>
+                        </div>
+                        <div class="down">
+                            <p>noviembre//2018</p>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div id="patro">
@@ -41,8 +52,10 @@
                 <Images v-bind:patrocinadores="patrocinio"></Images>
             </div>
             <div id="ponentes">
-                <h1>ponentes</h1>
-                <Ponentes v-bind:ponentes="ponente" v-bind:selected="seleccionado"></Ponentes>
+                <div class="contents">
+                    <h1>ponentes</h1>
+                    <Ponentes v-bind:ponentes="ponente" v-bind:selected="currentPonente"></Ponentes>
+                </div>
             </div>
             <div id="partner">
                 <div class="info">
@@ -82,7 +95,7 @@
                 <div class="content">
 
                     <div class="hed">
-                        <img src="/assets/img/logo-hedp-black.svg" alt="">
+                        <img src="assets/img/logo-hedp-black.svg" alt="">
                         <p>2018 © Hoy Es Diseño</p>
                     </div>
                     <div class="links">
@@ -109,25 +122,10 @@
             <Modal v-if="seleccionado" v-bind:datos="seleccionado"></Modal>
         </div>
 
-        <!-- <div id="model" class="open">
-            <div class="container">
-                <div id="cruz">
-                    <img src="/assets/img/cruz.svg" alt="">
-                </div>
-                <div class="content">
-                    <h1>¿Qué es el kit de prensa?</h1>
-                    <p></p>
-                </div>
-                <div class="descarga">
-                    <h1></h1>
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div> -->
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <!-- <script src="accions.js"></script> -->
     <script src="datos.js"></script>
-    <script src="accions.js"></script>
     <script src="main.js"></script>
 </body>
 
