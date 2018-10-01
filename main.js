@@ -64,35 +64,6 @@ Vue.component('Images', {
 });
 
 
-// Vue.component('Ponentes', {
-//     props: ['ponentes', 'selected'],
-//     computed: {
-
-//     },
-//     methods: {
-//         ponenteSeleccionado: function (ponente) {
-//             apps.seleccionado = ponente;
-//             console.log(ponente.name);
-//         },
-//     },
-//     template: `
-//     <div class="ponentes">
-//         <div class="item" v-for="ponente in ponentes" v-on:click="ponenteSeleccionado(ponente)">
-//             <div class="photo">
-//                 <img :src="ponente.img"/>
-//                 <div class="mas">
-//                     <img src="assets/img/mas.png" alt="">
-//                     <p>ver más</p>
-//                 </div>
-//             </div>
-//             <div class="name">
-//                 <h1>{{ponente.name}}</h1>
-//             </div>
-//         </div>
-//     </div>
-//     `
-// });
-
 Vue.component('Ponentes', {
     props: ['ponentes', 'selected'],
     methods: {
@@ -121,7 +92,7 @@ Vue.component('Ponentes', {
             </div>
         </div>
     </div>`
-});
+}); 
 
 
 var apps = new Vue({

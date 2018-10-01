@@ -239,11 +239,22 @@
   position: relative;
 }
 
-#app #container header img {
+#app #container header .animated {
   position: absolute;
   height: 100%;
   right: 0;
   z-index: 0;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+
+#app #container header .current {
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
 }
 
 #app #container header .content {
@@ -264,7 +275,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 10px;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 20px;
   -webkit-transition: font-size .5s ease-in-out;
   transition: font-size .5s ease-in-out;
 }
@@ -680,7 +691,7 @@
 #app #container #ponentes .contents .ponentes {
   width: 80%;
   margin: auto;
-  height: 300px;
+  height: 400px;
   position: relative;
 }
 
@@ -793,6 +804,10 @@
   white-space: pre-wrap;
   vertical-align: middle;
   display: inline-block;
+}
+
+#app #container #ponentes .contents .ponentes .container .photo img {
+  width: 276px;
 }
 
 @media (max-width: 760px) {
