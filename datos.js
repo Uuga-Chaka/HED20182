@@ -122,4 +122,36 @@ var medias = [{
         face: 'https://www.facebook.com/sperezstudio',
         be: 'https://www.behance.net/sperezv9'
     }
+}, {
+    img: 'assets/img/hed06.jpg',
+    name: 'Sebastian pérez',
+    redes: {
+        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
+        face: 'https://www.facebook.com/sperezstudio',
+        be: 'https://www.behance.net/sperezv9'
+    }
+}, {
+    img: 'assets/img/hed07.jpg',
+    name: 'Sebastian pérez',
+    redes: {
+        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
+        face: 'https://www.facebook.com/sperezstudio',
+        be: 'https://www.behance.net/sperezv9'
+    }
+}, {
+    img: 'assets/img/hed08.jpg',
+    name: 'Sebastian pérez',
+    redes: {
+        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
+        face: 'https://www.facebook.com/sperezstudio',
+        be: 'https://www.behance.net/sperezv9'
+    }
+}, {
+    img: 'assets/img/hed09.jpg',
+    name: 'Sebastian pérez',
+    redes: {
+        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
+        face: 'https://www.facebook.com/sperezstudio',
+        be: 'https://www.behance.net/sperezv9'
+    }
 }];

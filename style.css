@@ -5,6 +5,10 @@
   font-family: "Lato", sans-serif;
 }
 
+* p {
+  font-size: 13px;
+}
+
 #app #model {
   display: block;
   position: fixed;
@@ -129,6 +133,137 @@
 
 #app #container {
   width: 100%;
+  /*
+       #ponentes {
+            position: relative;
+            padding-top: 50px;
+            background-color: $azul;
+
+            .contents {
+                width: 80%;
+                margin: auto;
+                padding-bottom: 50px;
+
+                >h1 {
+                    letter-spacing: 20px;
+                    font-size: $h1;
+                    text-transform: uppercase;
+                    color: $salmon;
+                    font-family: $mont;
+                    font-weight: 900;
+                }
+
+
+                .ponentes {
+                    width: 80%;
+                    margin: auto;
+                    height: 400px;
+                    position: relative;
+
+
+                    .container {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        white-space: nowrap;
+
+                        .content {
+                            margin-top: 15px;
+                            white-space: normal;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            >p {
+                                color: $salmon;
+                                cursor: pointer;
+                                margin-left: 20px;
+                                font-size: 12px;
+                                letter-spacing: .2px;
+                                animation-name: zoom;
+                                animation-duration: 1s;
+                                animation-iteration-count: infinite;
+
+                                @keyframes zoom {
+                                    0% {
+                                        color: $salmon
+                                    }
+
+                                    50% {
+                                        color: white;
+                                    }
+
+                                    100% {
+                                        color: $salmon
+                                    }
+                                }
+                            }
+
+                            .distance {
+                                background-color: $salmon;
+                                padding: 2px;
+
+                                .info {
+                                    overflow-x: auto;
+                                    padding: 15px;
+                                    width: 500px;
+                                    height: 200px;
+
+                                    &::-webkit-scrollbar {
+                                        width: 3px;
+                                    }
+
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 20px;
+                                        background: $azul;
+                                    }
+
+                                    p {
+                                        color: $azul;
+                                        font-size: 14px;
+                                        letter-spacing: .5px;
+                                        line-height: 20px;
+                                        margin-top: 15px;
+                                    }
+
+                                    h2 {
+                                        margin-bottom: 30px;
+                                        font-size: 40px;
+                                        text-transform: uppercase;
+                                        color: white;
+                                        letter-spacing: 5px;
+                                        font-family: $mont;
+                                        font-weight: 900;
+                                    }
+
+                                    .redes {
+                                        float: right;
+                                        margin-top: 20px;
+                                        width: 100%;
+                                        background-color: $azul;
+
+                                        img {
+                                            margin: 5px;
+                                            width: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .photo {
+                            white-space: pre-wrap;
+                            vertical-align: middle;
+                            display: inline-block;
+
+                            img {
+                                width: 276px;
+                            }
+                        }
+                    }
+                }
+            }
+        }*/
 }
 
 #app #container #nav {
@@ -325,10 +460,39 @@
 }
 
 #app #container #partner {
-  width: 80%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 30px;
+  background-color: white;
+  /* #media-partners {
+                #items {
+                    margin: auto;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap; 
+
+                    .item {
+                        width: 200px;
+                        position: relative;
+                        >img {
+                            margin: 5px;
+                            width: 100%;
+                        }
+                        .redes {
+                            position: absolute;
+                            bottom:1px;
+                            a {
+                                img {
+                                    z-index: 2;
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }*/
 }
 
 #app #container #partner .info h1 {
@@ -401,8 +565,8 @@
 }
 
 #app #container #partner #media-partners #items .item > img:hover {
-  -webkit-filter: blur(5px) brightness(2);
-          filter: blur(5px) brightness(2);
+  -webkit-filter: blur(5px) brightness(1.2);
+          filter: blur(5px) brightness(1.2);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -668,146 +832,200 @@
 }
 
 #app #container #ponentes {
-  position: relative;
-  padding-top: 50px;
   background-color: #26214D;
+  padding: 50px 0 100px 0;
 }
 
-#app #container #ponentes .contents {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 50px;
-}
-
-#app #container #ponentes .contents > h1 {
-  letter-spacing: 20px;
+#app #container #ponentes h1 {
   font-size: 60px;
   text-transform: uppercase;
-  color: #F48576;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  color: #F48576;
+  text-align: center;
+  letter-spacing: 20px;
+  margin-bottom: 50px;
 }
 
-#app #container #ponentes .contents .ponentes {
-  width: 80%;
+#app #container #ponentes .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  height: 400px;
-  position: relative;
+  width: 70%;
 }
 
-#app #container #ponentes .contents .ponentes .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  white-space: nowrap;
+#app #container #ponentes .container .data {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#app #container #ponentes .contents .ponentes .container .content {
-  margin-top: 15px;
-  white-space: normal;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#app #container #ponentes .contents .ponentes .container .content > p {
-  color: #F48576;
-  cursor: pointer;
-  margin-left: 20px;
-  font-size: 12px;
-  letter-spacing: .2px;
-  -webkit-animation-name: zoom;
-          animation-name: zoom;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes zoom {
-  0% {
-    color: #F48576;
-  }
-  50% {
-    color: white;
-  }
-  100% {
-    color: #F48576;
-  }
-}
-
-@keyframes zoom {
-  0% {
-    color: #F48576;
-  }
-  50% {
-    color: white;
-  }
-  100% {
-    color: #F48576;
-  }
-}
-
-#app #container #ponentes .contents .ponentes .container .content .distance {
-  background-color: #F48576;
-  padding: 2px;
-}
-
-#app #container #ponentes .contents .ponentes .container .content .distance .info {
-  overflow-x: auto;
-  padding: 15px;
-  width: 500px;
-  height: 200px;
-}
-
-#app #container #ponentes .contents .ponentes .container .content .distance .info::-webkit-scrollbar {
-  width: 3px;
-}
-
-#app #container #ponentes .contents .ponentes .container .content .distance .info::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: #26214D;
-}
-
-#app #container #ponentes .contents .ponentes .container .content .distance .info p {
+#app #container #ponentes .container .data h2,
+#app #container #ponentes .container .data p {
   color: #26214D;
-  font-size: 14px;
-  letter-spacing: .5px;
-  line-height: 20px;
-  margin-top: 15px;
 }
 
-#app #container #ponentes .contents .ponentes .container .content .distance .info h2 {
-  margin-bottom: 30px;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 5px;
+#app #container #ponentes .container .data h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 35px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-#app #container #ponentes .contents .ponentes .container .content .distance .info .redes {
-  float: right;
-  margin-top: 20px;
-  width: 100%;
-  background-color: #26214D;
+#app #container #ponentes .container .data .photo img {
+  width: 300px;
 }
 
-#app #container #ponentes .contents .ponentes .container .content .distance .info .redes img {
+#app #container #ponentes .container .data .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app #container #ponentes .container .data .info .content-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #container #ponentes .container .data .info .content-info .centering {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#app #container #ponentes .container .data .info .content-info .centering .title {
+  border-bottom: 1px solid #26214D;
+  margin-bottom: 20px;
+}
+
+#app #container #ponentes .container .data .info .bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app #container #ponentes .container .data .info .bottom button {
+  border: none;
+  background-color: #F48576;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 11px;
+  font-weight: 300;
+}
+
+#app #container #ponentes .container .data .info .bottom .redes img {
+  width: 25px;
   margin: 5px;
-  width: 20px;
 }
 
-#app #container #ponentes .contents .ponentes .container .photo {
-  white-space: pre-wrap;
-  vertical-align: middle;
-  display: inline-block;
+#app #container #ponentes .container .data .fecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #26214D;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#app #container #ponentes .contents .ponentes .container .photo img {
-  width: 276px;
+#app #container #ponentes .container .data .fecha h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+#app #container #ponentes .container .data .fecha .dia {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+#app #container #ponentes .container .data .fecha .lugar {
+  border-bottom: 1px solid #26214D;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+#app #container #ponentes .container .data .fecha .lugar > h2 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#app #container #ponentes .container .arrow {
+  background-color: #F48576;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #26214D;
+}
+
+#app #container #ponentes .container .arrow:nth-child(1) {
+  padding-right: 20px;
+}
+
+#app #container #ponentes .container .arrow:nth-child(3) {
+  padding-left: 20px;
 }
 
 @media (max-width: 760px) {

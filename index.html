@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hoy es diseño 2018-2</title>
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Hoy es Diseño Evento 2018 + Creatividad + Diseño + Innovación</title>
+    <!-- Theme color browser -->
+    <meta name="theme-color" content="#000111" />
+    <link rel="icon" href="https://www.hoyesdiseno.com/store/wp-content/uploads/2018/02/icon-hed.png" />
+    <meta name="keywords" content="hoy es diseño, evento hoy es diseño, registro hoy es diseño, evento diseño, universidad icesi, diseño de medios interactivos, diseño industrial, cali, colombia" />
+    <meta name="description" content="La articulación de la creatividad dentro de las disciplinas del sector creativo conduce a generar procesos y resultados innovadores que transforman y enriquecen los productos, servicios y experiencias que vivimos diariamente.">
+    <!-- og tags Facebook -->
+    <meta property="og:description" content="La articulación de la creatividad dentro de las disciplinas del sector creativo conduce a generar procesos y resultados innovadores que transforman y enriquecen los productos, servicios y experiencias que vivimos diariamente.">
+    <meta property="og:title" content="Hoy es Diseño Evento 2018 + Creatividad + Diseño + Innovación">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hoyesdiseno.com/evento">
+    <meta property="og:image" content="https://hoyesdiseno.com/evento/assets/images/backgrounds/cinemateca.jpg">
+    <meta property="og:site_name" content="hoyesdiseno.com/evento">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hoy es Diseño Evento 2018 + Creatividad + Diseño + Innovación">
+    <meta name="twitter:description" content="La articulación de la creatividad dentro de las disciplinas del sector creativo conduce a generar procesos y resultados innovadores que transforman y enriquecen los productos, servicios y experiencias que vivimos diariamente.">
+    <meta name="twitter:image:src" content="https://hoyesdiseno.com/evento/assets/images/backgrounds/cinemateca.jpg">
+    <meta name="twitter:domain" content="hoyesdiseno.com/evento">
+    <!-- SEO -->
+    <link rel="canonical" href="https://hoyesdiseno.com/evento">
+    <!-- hreflang -->
+    <link rel="alternate" href="https://hoyesdiseno.com/evento" hreflang="es">
+    <!--Stilos-->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,7 +46,7 @@
                         <ul>
                             <li><a href="#partner">media partners</a></li>
                             <li><a href="#ponentes">ponentes</a></li>
-                            <li><a href="https://drive.google.com/drive/folders/1TfgXlM51PFKlINBt7otg3qkNhG_60o6v?usp=sharing">prensa</a></li>
+                            <li><a href="">prensa</a></li>
                             <li><a href="#map">lugar</a></li>
                             <li><a href="#">contacto</a></li>
                             <li><a href="#">agenda</a></li>
@@ -54,8 +81,8 @@
                 <Images v-bind:patrocinadores="patrocinio"></Images>
             </div>
             <div id="ponentes">
+                <h1>ponentes</h1>
                 <div class="contents">
-                    <h1>ponentes</h1>
                     <Ponentes v-bind:ponentes="ponente" v-bind:selected="currentPonente"></Ponentes>
                 </div>
             </div>
@@ -77,11 +104,11 @@
                     <h1>suscribirme</h1>
                     <form action="">
                         <label for="email">Email</label>
-                        <input type="email" name="" id="email" placeholder="info@hoyesdiseno.com">
+                        <input type="email" name="" id="email" placeholder="nombre@correo.com">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Pepito">
+                        <input type="text" id="nombre" placeholder="Jaime">
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Perez">
+                        <input type="text" id="apellido" placeholder="Giraldo">
                         <div id="validate">
                             <input type="radio" name="validar" id="">
                             <p>Acepto y he leído la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
@@ -120,6 +147,9 @@
                 </div>
             </footer>
         </div>
+
+        
+
         <div id="infosita">
             <Modal v-if="seleccionado" v-bind:datos="seleccionado"></Modal>
         </div>
@@ -128,7 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
     <script src="accions.js"></script>
     <script src="datos.js"></script>
-    <script src="main.js"></script>
+    <script src="appp.js"></script>
 </body>
 
 </html>
