@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $msj= test_input($_POST["msj"]);
     }
 
-    if($name_error == "" $email_error == "" $tel_error == "" $msj_error == ""){
+    if($name_error == "" and $email_error == "" and $tel_error == "" and $msj_error == ""){
 
     }
 }
