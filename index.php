@@ -117,8 +117,7 @@
                         <textarea name="" id="msj" name="msj" placeholder="Mensaje..." value="<?= $msj ?>" onkeyup="textAreaAdjust(this)" required></textarea>
                         <span class="error"><?= $msj_error  ?></span>
                         <div id="validate">
-                            <input type="radio" name="validar" id="" value="<?= $valid ?>">
-                            <p>Acepto y he leído la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
+                            <p>Al enviar el mensaje estás aceptando la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
                                     datos personales</a> de la Universidad Icesi.</p>
                         </div>
                         <div class="btn">
