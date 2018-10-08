@@ -21,6 +21,7 @@ var ponentes = [{
     img: 'assets/img/ponentes/irene_anton2.jpg',
     name: 'Anton & Irene',
     info: [
+        'We’ve worked with some pretty great people at some pretty awesome companies. We also spend about 3 months a year working on self-initiated projects. We have set up our studio so we can be personally involved with every single project and get to be choosy about what work we take on — client or self-initiated. We have given interviews on the rooftop of a Manila hotel, a Chinatown dumpling house, and in an old movie theater.',
         'Irene:',
         `Irene is the co-founder of the Brooklyn based design studio “Anton & Irene”. She has led the strategy and UX initiatives for clients including The Met, Kickstarter, Balenciaga, Wacom, Zumtobel, USA Today, EA, Spotify, Google, Nickelodeon, Karim Rashid, Shantell Martin, BBC and Red Bull for both the web and cross-platform applications. Her work has been recognized by Cannes, The Webbys, The Emmys, The FWA, Awwwards, Interaction Design Association and The European Design Awards.`,
         `Irene has been a guest speaker at numerous conferences such as OFFF and FITC, and has lectured at SVA in New York, Hyper Island in Stockholm, Elisava in Barcelona, and the Design Academy in Eindhoven. Her personal projects have been displayed in Amsterdam, Antwerp, Paris, New York, Cincinnati, Singapore and Tegucigualpa.`, 'Aton:',

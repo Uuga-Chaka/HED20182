@@ -101,7 +101,11 @@ Vue.component('Ponentes', {
             if (apps.currentPonente == 0) {
                 apps.currentPonente = ponentes.length;
             }
-        }
+        },
+        ponenteSeleccionado: function (event) {
+            apps.seleccionado = ponentes[this.selected];
+            console.log("working");
+        },
     },
     template: `
     <div class="ponentes">
@@ -123,7 +127,7 @@ Vue.component('Ponentes', {
                         
                         <div class="bottom">
                             <Redes :link="ponentes[selected].redes"></Redes>
-                            <button>ver más</button>
+                            <button  v-on:click="ponenteSeleccionado">ver más</button>
                         </div>
                     </div>
                     <div class="fecha">

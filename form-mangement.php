@@ -72,7 +72,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         ";
 
         @mail($to,$tema,$mensaje,$headers);
-        $name = $email = $tel = $message= "";
+        $name = "";
+        $email = "";
+        $tel = "";
+        $message= "";
     }
 }
 
