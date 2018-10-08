@@ -13,7 +13,6 @@ var ponentes = [{
     ],
     redes: {
         insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9',
         web: 'http://www.morphine.com.uy/',
         be: 'https://www.behance.net/Morphine-MG',
     }
@@ -32,8 +31,6 @@ var ponentes = [{
         `We’ve worked with some pretty great people at some pretty awesome companies. We also spend about 3 months a year working on self-initiated projects.`
     ],
     redes: {
-        insta: 'https://instagram.com/uuga',
-        face: 'https://www.facebook.com/jpgallego9',
         web: 'http://antonandirene.com/',
         be: 'https://www.behance.net/antonandirene'
     }
@@ -42,7 +39,6 @@ var ponentes = [{
     name: 'Foo Studio - Ricardo Mendieta',
     info: ['Foo es una agencia digital creativa enfocada en la innovación tecnológica y comunicación, nos encontramos en la Ciudad de México, actualmente estamos trabajando en campañas increíbles para clientes como Indio, Bticino, Chevrolet y muchas más.'],
     redes: {
-        insta: 'https://instagram.com/uuga',
         face: 'https://www.facebook.com/fooStudioMx/',
         web: 'https://foostudio.mx/',
     }
