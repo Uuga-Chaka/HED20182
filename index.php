@@ -105,16 +105,16 @@
                     <h1>contacto</h1>
                     <form action="<?= $SERVER['PHP_SELF']; ?>">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<? =$email ?>" required>
+                        <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>" required>
                         <span class="error"><?= $email_error  ?></span>
                         <label for="name">Nombre + Apellido</label>
-                        <input type="text" name="name" id="name" placeholder="Jaime" value="<? =$name ?>" required>
+                        <input type="text" name="name" id="name" placeholder="Jaime" value="<?= $name ?>" required>
                         <span class="error"><?= $name_error  ?></span>
                         <label for="tel">Celular</label>
-                        <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<? =$tel ?>" required>
+                        <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<?= $tel ?>" required>
                         <span class="error"><?= $tel_error  ?></span>
                         <label for="msj">Mensaje</label>
-                        <textarea name="" id="msj" name="msj" placeholder="Mensaje..." value="<? =$msj ?>" onkeyup="textAreaAdjust(this)" required></textarea>
+                        <textarea name="" id="msj" name="msj" placeholder="Mensaje..." value="<?= $msj ?>" onkeyup="textAreaAdjust(this)" required></textarea>
                         <span class="error"><?= $msj_error  ?></span>
                         <div id="validate">
                             <input type="radio" name="validar" id="">
