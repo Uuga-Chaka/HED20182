@@ -103,7 +103,7 @@
                     <?php include('form-mangement.php') ?>
                 <div id="form-content">
                     <h1>contacto</h1>
-                    <form action="<?= $SERVER['PHP_SELF']; ?>" method="post">
+                    <form action="form-mangement.php" method="post">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>" required>
                         <span class="error"><?= $email_error  ?></span>
