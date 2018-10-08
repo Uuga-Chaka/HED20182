@@ -39,6 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     if($name_error == "" and $email_error == "" and $tel_error == "" and $message_error == ""){
+        unset($_POST['submit']);
 
         $to ='jpgarias09@gmail.com' . ', ';
         $to .='jpgallego9@hotmail.com'. ', ';
