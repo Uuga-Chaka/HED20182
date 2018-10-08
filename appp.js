@@ -48,7 +48,7 @@ Vue.component('Partner', {
     },
     methods: {
         moreElems: function () {
-            apps.shownElements += 5;
+            apps.shownElements += 4;
         }
     },
     template: `
@@ -179,7 +179,7 @@ var apps = new Vue({
         patrocinio: patrocinadores,
         partners: medias,
         currentPonente: 2,
-        shownElements: 5,
+        shownElements: 4,
     },
     methods: {
         ponenteDesseleccionado: function () {

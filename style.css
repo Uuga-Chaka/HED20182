@@ -486,8 +486,8 @@
 #app #container #partner #media-partners .content #items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-bottom: 50px;
 }
