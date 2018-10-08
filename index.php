@@ -91,7 +91,8 @@
                     <h1>media partners</h1>
                 </div>
                 <div id="media-partners">
-                    <Partner v-bind:elementos="partners"></Partner>
+                    <Partner v-bind:elementos="partners" :cantidad="shownElements"></Partner>
+               
                 </div>
             </div>
             <div id="map">
@@ -99,16 +100,18 @@
                     width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div id="suscribe">
+                <?php include('form-mangement.php') ?>
                 <div id="form-content">
-
-                    <h1>suscribirme</h1>
-                    <form action="">
+                    <h1>contacto</h1>
+                    <form action="<?= $SERVER['PHP_SELF']; ?>">
                         <label for="email">Email</label>
-                        <input type="email" name="" id="email" placeholder="nombre@correo.com">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Jaime">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Giraldo">
+                        <input type="email" name="email" id="email" placeholder="nombre@correo.com" required>
+                        <label for="name">Nombre + Apellido</label>
+                        <input type="text" name="name" id="name" placeholder="Jaime" required>
+                        <label for="tel">Celular</label>
+                        <input type="tel" id="tel" name="tel" placeholder="0123456789" required>
+                        <label for="msj">Mensaje</label>
+                        <textarea name="" id="msj" name="msj" placeholder="Mensaje..." onkeyup="textAreaAdjust(this)" required></textarea>
                         <div id="validate">
                             <input type="radio" name="validar" id="">
                             <p>Acepto y he leído la <a href="#">política de privacidad</a> y <a href="#">tratamiento de

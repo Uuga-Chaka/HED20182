@@ -2,6 +2,10 @@ function infoActual(titulo, info) {
     return `<h1>{{titulo}}</h1><p>{{info}}</p>`
 }
 
+function visiblePartners(elemento, cantidad) {
+    return elemento.slice(0, cantidad);
+}
+
 Vue.component('Modal', {
     props: ['datos'],
     methods: {
@@ -30,15 +34,33 @@ Vue.component('Modal', {
 });
 
 Vue.component('Partner', {
-    props: ['elementos'],
-
+    props: ['elementos', 'cantidad'],
+    computed: {
+        partners: function () {
+            return visiblePartners(this.elementos, this.cantidad);
+        },
+        renderButton: function () {
+            if (this.elementos.length >= this.cantidad)
+                return true;
+            else
+                return false;
+        }
+    },
+    methods: {
+        moreElems: function () {
+            apps.shownElements += 5;
+        }
+    },
     template: `
-    <div id="items">
-        <div class="item" v-for="elem in elementos">
-            <img :src="elem.img" alt="">
-            <Redes :link="elem.redes"></Redes>
-            <p>{{elem.name}}</p>
+    <div class="content">
+        <div id="items">
+            <div class="item" v-for="elem in partners">
+                <p>{{elem.name}}</p>
+                <img :src="elem.img" alt="">
+                <Redes :link="elem.redes"></Redes>
+            </div>
         </div>
+        <button v-on:click="moreElems" v-if="renderButton">ver más</button>
     </div>`
 });
 
@@ -72,7 +94,8 @@ Vue.component('Ponentes', {
             if (apps.currentPonente == ponentes.length) {
                 apps.currentPonente = 0;
             }
-        }, ponenteAtras: function () {
+        },
+        ponenteAtras: function () {
             apps.currentPonente += 1;
             console.log("click working");
             if (apps.currentPonente == 0) {
@@ -156,10 +179,11 @@ var apps = new Vue({
         patrocinio: patrocinadores,
         partners: medias,
         currentPonente: 2,
+        shownElements: 5,
     },
     methods: {
         ponenteDesseleccionado: function () {
             apps.seleccionado = null;
         }
     },
-})
+});

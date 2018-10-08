@@ -267,7 +267,7 @@
 }
 
 #app #container #nav {
-  z-index: 1;
+  z-index: 4;
   position: fixed;
   height: 60px;
   background-color: #F48576;
@@ -464,35 +464,6 @@
   margin-top: 50px;
   margin-bottom: 30px;
   background-color: white;
-  /* #media-partners {
-                #items {
-                    margin: auto;
-                    width: 90%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    flex-wrap: wrap; 
-
-                    .item {
-                        width: 200px;
-                        position: relative;
-                        >img {
-                            margin: 5px;
-                            width: 100%;
-                        }
-                        .redes {
-                            position: absolute;
-                            bottom:1px;
-                            a {
-                                img {
-                                    z-index: 2;
-                                    width: 25px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }*/
 }
 
 #app #container #partner .info h1 {
@@ -506,31 +477,43 @@
 }
 
 #app #container #partner #media-partners {
-  width: 100%;
   margin-top: 40px;
   margin-bottom: 120px;
+  margin: auto;
+  width: 70%;
 }
 
-#app #container #partner #media-partners #items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#app #container #partner #media-partners .content #items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 50px;
 }
 
-#app #container #partner #media-partners #items .item {
+#app #container #partner #media-partners .content #items .item {
   position: relative;
-  width: 200px;
-  height: 200px;
   overflow: hidden;
-  margin: 5px;
 }
 
-#app #container #partner #media-partners #items .item > p {
+#app #container #partner #media-partners .content #items .item > img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#app #container #partner #media-partners .content #items .item > img:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#app #container #partner #media-partners .content #items .item > p {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -546,42 +529,25 @@
   transition: transform .3s, -webkit-transform .3s;
   letter-spacing: 5px;
   font-size: 12px;
+  z-index: 1;
 }
 
-#app #container #partner #media-partners #items .item:hover p {
+#app #container #partner #media-partners .content #items .item:hover p {
   -webkit-transform: translate(0, 20px);
           transform: translate(0, 20px);
 }
 
-#app #container #partner #media-partners #items .item > img {
-  position: absolute;
-  width: 200px;
-  -webkit-filter: blur(0);
-          filter: blur(0);
-  -webkit-transition: .1s filter linear, -webkit-transform .2s;
-  transition: .1s filter linear, -webkit-transform .2s;
-  transition: .1s filter linear, transform .2s;
-  transition: .1s filter linear, transform .2s, -webkit-transform .2s;
-}
-
-#app #container #partner #media-partners #items .item > img:hover {
-  -webkit-filter: blur(5px) brightness(1.2);
-          filter: blur(5px) brightness(1.2);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-#app #container #partner #media-partners #items .item .redes {
+#app #container #partner #media-partners .content #items .item .redes {
   background-color: #F48576;
   height: 20px;
   position: absolute;
-  bottom: 0px;
+  bottom: 3px;
   right: 0px;
   padding: 5px;
   border-radius: 10px 0 0 0;
 }
 
-#app #container #partner #media-partners #items .item .redes a img {
+#app #container #partner #media-partners .content #items .item .redes a img {
   position: relative;
   width: 20px;
   -webkit-transition: -webkit-transform .3s;
@@ -591,9 +557,22 @@
   padding: 0 5px 0 5px;
 }
 
-#app #container #partner #media-partners #items .item .redes a img:hover {
+#app #container #partner #media-partners .content #items .item .redes a img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+#app #container #partner #media-partners .content button {
+  margin: 120px;
+  display: block;
+  border: none;
+  margin: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: #F48576;
+  color: #26214D;
 }
 
 #app #container #suscribe {
@@ -633,6 +612,14 @@
   border: none;
   margin-top: 10px;
   padding: 8px;
+}
+
+#app #container #suscribe #form-content form textarea {
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  padding: 8px;
+  resize: none;
 }
 
 #app #container #suscribe #form-content form .btn {
@@ -1087,24 +1074,6 @@
   }
   #app #container #patro h1,
   #app #container #patro h1 {
-    font-size: 20px;
-  }
-  #app #container #partner .info h1 {
-    font-size: 20px;
-  }
-  #app #container #partner #media-partners #items {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #app #container #partner #media-partners #items .item {
-    width: 400px;
-    height: 400px;
-  }
-  #app #container #partner #media-partners #items .item > img {
-    width: 100%;
-  }
-  #app #container #partner #media-partners #items .item h1 {
     font-size: 20px;
   }
   #app #container #suscribe #form-content {

@@ -27,5 +27,10 @@ function loopFunction(delay, callback) {
     };
     loop();
 };
+//https://stackoverflow.com/questions/995168/textarea-to-resize-based-on-content-length
+function textAreaAdjust(o) {
+    o.style.height = "1px";
+    o.style.height = (25+o.scrollHeight)+"px";
+  }
 
 loopFunction(10000, imageChange);

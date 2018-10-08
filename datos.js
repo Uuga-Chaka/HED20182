@@ -124,34 +124,33 @@ var medias = [{
     }
 }, {
     img: 'assets/img/hed06.jpg',
-    name: 'Sebastian pérez',
+    name: 'Colectivo guacala',
     redes: {
-        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
-        face: 'https://www.facebook.com/sperezstudio',
-        be: 'https://www.behance.net/sperezv9'
+        insta: 'https://www.instagram.com/colectivo_guacala/ ',
+        face: 'https://www.facebook.com/colectivoguacala/',
+        be: 'https://www.behance.net/guacala '
     }
 }, {
     img: 'assets/img/hed07.jpg',
-    name: 'Sebastian pérez',
+    name: 'Jeasson Marín',
     redes: {
-        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
-        face: 'https://www.facebook.com/sperezstudio',
-        be: 'https://www.behance.net/sperezv9'
+        insta: 'https://www.instagram.com/jeassonmarin/',
+        face: 'https://www.facebook.com/jemadesigner',
+        be: 'https://www.behance.net/jemadesigner '
     }
 }, {
     img: 'assets/img/hed08.jpg',
-    name: 'Sebastian pérez',
+    name: 'Jairo Díaz',
     redes: {
-        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
-        face: 'https://www.facebook.com/sperezstudio',
-        be: 'https://www.behance.net/sperezv9'
+        insta: 'https://www.instagram.com/diaz_go/',
+        be: ' https://www.behance.net/JairoDiazH'
     }
 }, {
     img: 'assets/img/hed09.jpg',
-    name: 'Sebastian pérez',
+    name: 'Diego Bedoya',
     redes: {
-        insta: 'https://www.instagram.com/sebastian96_graphc/ ',
-        face: 'https://www.facebook.com/sperezstudio',
-        be: 'https://www.behance.net/sperezv9'
+        insta: 'https://www.instagram.com/goodindraw/' ,
+        face: 'https://www.facebook.com/GOODI-416142678596646/',
+        be: 'https://www.behance.net/Diegoalejandrobedoya '
     }
 }];
