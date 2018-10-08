@@ -44,12 +44,12 @@
                     <img src="assets/img/logo-hedp-black.svg" alt="">
                     <div class="links">
                         <ul>
-                            <li><a href="#partner">media partners</a></li>
+                            <!--<li><a href="">prensa</a></li>-->
+                            <li><a href="#patro">patrocinadores</a></li>
                             <li><a href="#ponentes">ponentes</a></li>
-                            <li><a href="">prensa</a></li>
+                            <li><a href="#partner">media partners</a></li>
                             <li><a href="#map">lugar</a></li>
-                            <li><a href="#">contacto</a></li>
-                            <li><a href="#">agenda</a></li>
+                            <li><a href="#suscribe">contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,8 +99,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.033887981898!2d-76.53282148524222!3d3.3417917975673026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1eb8d09a3c1%3A0x766b9b441dfa8bbe!2sUniversidad+Icesi!5e0!3m2!1ses!2sco!4v1537401147788"
                     width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-
-¿
             <div id="suscribe">
                     <?php include('form-mangement.php') ?>
                 <div id="form-content">
@@ -110,7 +108,7 @@
                         <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>" required>
                         <span class="error"><?= $email_error  ?></span>
                         <label for="name">Nombre + Apellido</label>
-                        <input type="text" name="name" id="name" placeholder="Jaime" value="<?= $name ?>" required>
+                        <input type="text" name="name" id="name" placeholder="Nombre Apellido" value="<?= $name ?>" required>
                         <span class="error"><?= $name_error  ?></span>
                         <label for="tel">Celular</label>
                         <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<?= $tel ?>" required>

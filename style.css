@@ -630,12 +630,44 @@
   padding: 8px;
 }
 
+#app #container #suscribe #form-content form > input::-webkit-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form > input:-ms-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form > input::-ms-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form > input::placeholder {
+  color: red;
+}
+
 #app #container #suscribe #form-content form textarea {
   width: 100%;
   border: none;
   margin-top: 10px;
   padding: 8px;
   resize: none;
+}
+
+#app #container #suscribe #form-content form textarea::-webkit-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form textarea:-ms-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form textarea::-ms-input-placeholder {
+  color: red;
+}
+
+#app #container #suscribe #form-content form textarea::placeholder {
+  color: red;
 }
 
 #app #container #suscribe #form-content form .btn {

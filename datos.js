@@ -12,7 +12,6 @@ var ponentes = [{
         `En otras ocasiones, el cliente nos pide que desarrollemos todo desde cero: concepto, idea, dirección de arte, etc. Nos encanta cuidar un producto completo y producir algo con un mensaje potente y coherente. Nos apasionan la sinergia y la Dirección de Arte. Esto nos da la posibilidad de usar colores, formas, tipos y texturas para darle a cada producto un aspecto y sensación únicos. Para nosotros, simplemente no hay mayor alegría que esto.`
     ],
     redes: {
-        insta: 'https://instagram.com/uuga',
         web: 'http://www.morphine.com.uy/',
         be: 'https://www.behance.net/Morphine-MG',
     }
