@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         } 
     }
     if(empty($_POST["msj"])){
-        $msj_error = $_POST["msj"]);
+        $msj_error = "Falta incluir el mensaje";
     }else{
         $msj= test_input($_POST["msj"]);
     }
