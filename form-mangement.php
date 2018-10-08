@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }else{
         $tel= test_input($_POST["tel"]);
         if (!is_numeric($tel)) {
-            $email_error = "Deben ser caracteres numerico";
+            $tel_error = "Deben ser caracteres numerico";
         } 
     }
     if(empty($_POST["msj"])){
