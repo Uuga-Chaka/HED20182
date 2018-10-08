@@ -154,4 +154,12 @@ var medias = [{
         face: 'https://www.facebook.com/GOODI-416142678596646/',
         be: 'https://www.behance.net/Diegoalejandrobedoya '
     }
+}, {
+    img: 'assets/img/hed10.jpg',
+    name: 'Le Monsta',
+    redes: {
+        insta: 'https://www.instagram.com/le_monsta/' ,
+        face: 'https://www.facebook.com/LeMonstaDesign',
+        be: 'https://www.behance.net/lemonsta'
+    }
 }];
