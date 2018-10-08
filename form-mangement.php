@@ -1,6 +1,11 @@
 <?php
+
+print_r($_POST);
+
+/*
 $name_error = $email_error = $tel_error = $msj_error = "";
 $name = $email = $tel = $msj= "";
+
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -45,5 +50,5 @@ function test_input($data){
     $data = stripcslashes($data);
     $data = htmlspecialchars($data);  
     return $data;  
-}
+}*/
 ?>
