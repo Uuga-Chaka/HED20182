@@ -131,8 +131,8 @@ Vue.component('Ponentes', {
                         </div>
                     </div>
                     <div class="fecha">
-                        <div class="lugar"><h2>auditorio<br/>manuelita</h2></div>
-                        <div class="dia"><h2>9:00 am <br/>10:00 am</h2></div>
+                        <div class="lugar"><h2>próxima<br/>mente</h2></div>
+                        <div class="dia"><h2>próxima<br/>mente</h2></div>
                     </div>
             </div>
             <!-- arrow -->

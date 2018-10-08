@@ -42,7 +42,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         unset($_POST['submit']);
 
         $to ='jpgarias09@gmail.com' . ', ';
-        $to .='jpgallego9@hotmail.com'. ', ';
+        $to .='info@hoyesdiseno.com'. ', ';
         $headers = "Content-Type: text/html; charset=utf-8\n";
         $headers .= "From:".$_POST['email']."\r\n";
         $tema="$_POST[name] - Mensaje Hoy es Diseno Web";
