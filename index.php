@@ -113,8 +113,8 @@
                         <label for="tel">Celular</label>
                         <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<?= $tel ?>" required>
                         <span class="error"><?= $tel_error  ?></span>
-                        <label for="msj">Mensaje</label>
-                        <textarea name="msj" id="msj" name="msj" placeholder="Mensaje..." value="<?= $msj ?>" onkeyup="textAreaAdjust(this)" required></textarea>
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" name="message" placeholder="Mensaje..." value="<?= $message ?>" onkeyup="textAreaAdjust(this)" required></textarea>
                         <span class="error"><?= $msj_error  ?></span>
                         <div id="validate">
                             <p>Al enviar el mensaje estás aceptando la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
