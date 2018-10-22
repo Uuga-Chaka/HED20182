@@ -44,7 +44,6 @@
                     <img src="assets/img/logo-hedp-black.svg" alt="">
                     <div class="links">
                         <ul>
-                            <!--<li><a href="">prensa</a></li>-->
                             <li><a href="#patro">patrocinadores</a></li>
                             <li><a href="#ponentes">ponentes</a></li>
                             <li><a href="#partner">media partners</a></li>
@@ -64,15 +63,18 @@
                         <h1 class="animate">cambio</h1>
                         <h1 class="animate">diversidad</h1>
                     </div>
-                    <div id="fecha">
-                        <div class="up">
-                            <p>Universidad Icesi</p>
-                            <span>Jueves 8 // Viernes 9</span>
-                        </div>
-                        <div class="down">
-                            <p>noviembre//2018</p>
+                    <div id="fecha-btn">
+                        <div id="fecha">
+                            <div class="up">
+                                <p>Universidad Icesi</p>
+                                <span>Jueves 8 // Viernes 9</span>
+                            </div>
+                            <div class="down">
+                                <p>noviembre//2018</p>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/img/logo-hedtienda-black.svg" alt="" srcset="">
                 </div>
             </header>
             <div id="patro">
@@ -108,7 +110,7 @@
                         <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>" required>
                         <span class="error"><?= $email_error  ?></span>
                         <label for="name">Nombre + Apellido</label>
-                        <input type="text" name="name" id="name" placeholder="Nombre Apellido" value="<?= $name ?>" required>
+                        <input type="text" name="name" id="name" placeholder="Nombre apellido" value="<?= $name ?>" required>
                         <span class="error"><?= $name_error  ?></span>
                         <label for="tel">Celular</label>
                         <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<?= $tel ?>" required>

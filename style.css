@@ -436,23 +436,33 @@
   }
 }
 
-#app #container header #fecha {
+#app #container header #fecha-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#app #container header #fecha-btn #fecha {
   width: 250px;
   position: absolute;
   bottom: 40px;
 }
 
-#app #container header #fecha .up {
+#app #container header #fecha-btn #fecha .up {
   padding-left: 50px;
   background-color: white;
   padding: 5px;
 }
 
-#app #container header #fecha .up span {
+#app #container header #fecha-btn #fecha .up span {
   font-weight: 900;
 }
 
-#app #container header #fecha .down {
+#app #container header #fecha-btn #fecha .down {
   padding-left: 50px;
   padding: 5px;
   background-color: #14bccf;
@@ -460,10 +470,14 @@
   text-transform: uppercase;
 }
 
-#app #container header #fecha .down p {
+#app #container header #fecha-btn #fecha .down p {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   letter-spacing: 5px;
+}
+
+#app #container header #fecha-btn img {
+  width: 150px;
 }
 
 #app #container #partner {
@@ -631,19 +645,19 @@
 }
 
 #app #container #suscribe #form-content form > input::-webkit-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form > input:-ms-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form > input::-ms-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form > input::placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form textarea {
@@ -655,19 +669,19 @@
 }
 
 #app #container #suscribe #form-content form textarea::-webkit-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form textarea:-ms-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form textarea::-ms-input-placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form textarea::placeholder {
-  color: red;
+  color: #c8c8c8;
 }
 
 #app #container #suscribe #form-content form .btn {
