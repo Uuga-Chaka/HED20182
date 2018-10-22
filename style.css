@@ -436,33 +436,23 @@
   }
 }
 
-#app #container header #fecha-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-#app #container header #fecha-btn #fecha {
+#app #container header #fecha {
   width: 250px;
   position: absolute;
   bottom: 40px;
 }
 
-#app #container header #fecha-btn #fecha .up {
+#app #container header #fecha .up {
   padding-left: 50px;
   background-color: white;
   padding: 5px;
 }
 
-#app #container header #fecha-btn #fecha .up span {
+#app #container header #fecha .up span {
   font-weight: 900;
 }
 
-#app #container header #fecha-btn #fecha .down {
+#app #container header #fecha .down {
   padding-left: 50px;
   padding: 5px;
   background-color: #14bccf;
@@ -470,14 +460,10 @@
   text-transform: uppercase;
 }
 
-#app #container header #fecha-btn #fecha .down p {
+#app #container header #fecha .down p {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   letter-spacing: 5px;
-}
-
-#app #container header #fecha-btn img {
-  height: 50px;
 }
 
 #app #container #partner {
@@ -1093,6 +1079,30 @@
 
 #app #container #ponentes .container .arrow:nth-child(3) {
   padding-left: 20px;
+}
+
+#app #tiendita {
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #F48576;
+  padding: 20px 40px 20px 40px;
+  -webkit-box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px black;
+}
+
+#app #tiendita img {
+  width: 120px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#app #tiendita img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 760px) {

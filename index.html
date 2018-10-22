@@ -63,17 +63,14 @@
                         <h1 class="animate">cambio</h1>
                         <h1 class="animate">diversidad</h1>
                     </div>
-                    <div id="fecha-btn">
-                        <div id="fecha">
-                            <div class="up">
-                                <p>Universidad Icesi</p>
-                                <span>Jueves 8 // Viernes 9</span>
-                            </div>
-                            <div class="down">
-                                <p>noviembre//2018</p>
-                            </div>
+                    <div id="fecha">
+                        <div class="up">
+                            <p>Universidad Icesi</p>
+                            <span>Jueves 8 // Viernes 9</span>
                         </div>
-                        <img src="assets/img/logo-hedtienda-black.svg" alt="" srcset="">
+                        <div class="down">
+                            <p>noviembre//2018</p>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -94,7 +91,7 @@
                 </div>
                 <div id="media-partners">
                     <Partner v-bind:elementos="partners" :cantidad="shownElements"></Partner>
-               
+
                 </div>
             </div>
             <div id="map">
@@ -102,24 +99,32 @@
                     width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div id="suscribe">
-                    <?php include('form-mangement.php') ?>
+                <?php include('form-mangement.php') ?>
                 <div id="form-content">
                     <h1>contacto</h1>
                     <form action="<?= $SERVER['PHP_SELF']; ?>" method="post">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>" required>
-                        <span class="error"><?= $email_error  ?></span>
+                        <input type="email" name="email" id="email" placeholder="nombre@correo.com" value="<?= $email ?>"
+                            required>
+                        <span class="error">
+                            <?= $email_error  ?></span>
                         <label for="name">Nombre + Apellido</label>
-                        <input type="text" name="name" id="name" placeholder="Nombre apellido" value="<?= $name ?>" required>
-                        <span class="error"><?= $name_error  ?></span>
+                        <input type="text" name="name" id="name" placeholder="Nombre apellido" value="<?= $name ?>"
+                            required>
+                        <span class="error">
+                            <?= $name_error  ?></span>
                         <label for="tel">Celular</label>
                         <input type="tel" id="tel" name="tel" placeholder="0123456789" value="<?= $tel ?>" required>
-                        <span class="error"><?= $tel_error  ?></span>
+                        <span class="error">
+                            <?= $tel_error  ?></span>
                         <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" name="message" placeholder="Mensaje..." value="<?= $message ?>" onkeyup="textAreaAdjust(this)" required></textarea>
-                        <span class="error"><?= $msj_error  ?></span>
+                        <textarea name="message" id="message" name="message" placeholder="Mensaje..." value="<?= $message ?>"
+                            onkeyup="textAreaAdjust(this)" required></textarea>
+                        <span class="error">
+                            <?= $msj_error  ?></span>
                         <div id="validate">
-                            <p>Al enviar el mensaje estás aceptando la <a href="#">política de privacidad</a> y <a href="#">tratamiento de
+                            <p>Al enviar el mensaje estás aceptando la <a href="#">política de privacidad</a> y <a href="#">tratamiento
+                                    de
                                     datos personales</a> de la Universidad Icesi.</p>
                         </div>
                         <div class="btn">
@@ -156,7 +161,11 @@
             </footer>
         </div>
 
-        
+        <div id="tiendita">
+            <a href="https://www.hoyesdiseno.com/tienda/">
+                <img src="assets/img/logo-hedtienda-black.svg" alt="" srcset="">
+            </a>
+        </div>
 
         <div id="infosita">
             <Modal v-if="seleccionado" v-bind:datos="seleccionado"></Modal>
