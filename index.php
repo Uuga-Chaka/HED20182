@@ -33,7 +33,7 @@
     <!-- hreflang -->
     <link rel="alternate" href="https://hoyesdiseno.com/evento" hreflang="es">
     <!--Stilos-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
 </head>
 
 <body>
