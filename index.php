@@ -73,8 +73,8 @@
                                 <p>noviembre//2018</p>
                             </div>
                         </div>
+                        <img src="assets/img/logo-hedtienda-black.svg" alt="" srcset="">
                     </div>
-                    <img src="assets/img/logo-hedtienda-black.svg" alt="" srcset="">
                 </div>
             </header>
             <div id="patro">
